@@ -70,7 +70,7 @@ const Profile = ({doctorData}) => {
     e.preventDefault()
     console.log("called here updation ")
     try {
-      const res= await fetch(`http://localhost:5000/api/v1/doctor/${doctorData._id}`,{
+      const res= await fetch(`https://medical-booking-backend.vercel.app/api/v1/doctor/${doctorData._id}`,{
         method:'PUT',
         headers:{
           'content-type':'application/json',

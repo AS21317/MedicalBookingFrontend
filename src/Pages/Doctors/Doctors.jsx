@@ -21,7 +21,7 @@ const Doctors = () => {
     return ()=> clearTimeout(timeout)
   },[query])
 
-  const {data:doctors,loading,error} = useFetchData(`http://localhost:5000/api/v1/doctor?query=${debounceQuery}`)
+  const {data:doctors,loading,error} = useFetchData(`https://medical-booking-backend.vercel.app/api/v1/doctor?query=${debounceQuery}`)
 
 
   console.log("Doctors  at Find Doctor page are : ",doctors)

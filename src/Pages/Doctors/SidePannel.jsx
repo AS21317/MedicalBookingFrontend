@@ -8,7 +8,7 @@ const SidePannel = ({doctorId,ticketPrice,timeSlots}) => {
 
 const bookingHandler = async()=>{
   try {
-    const res = await fetch(`http://localhost:5000/api/v1/bookings/checkout-session/${doctorId}`,{
+    const res = await fetch(`https://medical-booking-backend.vercel.app/api/v1/bookings/checkout-session/${doctorId}`,{
       method:'POST',
       headers:{
         Authorization:`Bearer ${token}`

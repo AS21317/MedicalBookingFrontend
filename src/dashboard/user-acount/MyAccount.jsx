@@ -16,7 +16,7 @@ const MyAccount = () => {
     data: userData,
     loading,
     error,
-  } = usegetProfile(`http://localhost:5000/api/v1/user/profile/me`);
+  } = usegetProfile(`https://medical-booking-backend.vercel.app/api/v1/user/profile/me`);
 
   console.log(userData, "Data is ");
 

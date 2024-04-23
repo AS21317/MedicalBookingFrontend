@@ -6,7 +6,7 @@ import Error from '../../components/Error/Error'
 
 
 const MyBookings = () => {
-const {data:appointments , loading,error} = useFetchData(`http://localhost:5000/api/v1/user/appointments/my-appointtments`)
+const {data:appointments , loading,error} = useFetchData(`https://medical-booking-backend.vercel.app/api/v1/user/appointments/my-appointtments`)
 
 
   return (

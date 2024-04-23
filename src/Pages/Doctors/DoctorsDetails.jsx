@@ -18,7 +18,7 @@ const DoctorsDetails = () => {
     data: doctor,
     loading,
     error,
-  } = useFetchData(`http://localhost:5000/api/v1/doctor/${id}`);
+  } = useFetchData(`https://medical-booking-backend.vercel.app/api/v1/doctor/${id}`);
   console.log("Doctors available are : ", doctor);
 
   const {

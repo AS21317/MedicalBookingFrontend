@@ -59,7 +59,7 @@ const Profile = ({user}) => {
     setLoading(true);
     console.log("Calling submit handler ")
     try {
-      const res = await fetch(`http://localhost:5000/api/v1/user/${user._id}`, {
+      const res = await fetch(`https://medical-booking-backend.vercel.app/api/v1/user/${user._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
